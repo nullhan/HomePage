@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="en-us" http-equiv="Content-Language" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title id="title"></title>
+<link rel="stylesheet" href="css/index.css">
+<script type="text/javascript">
+var d = new Date()
+var time = d.getHours()
+if (time < 24)
+{
+document.getElementById("title").innerHTML="Good evening!";
+}
+if (time < 19)
+{
+document.getElementById("title").innerHTML="Good afternoon!";
+}
+if (time < 12)
+{
+document.getElementById("title").innerHTML="Good morning!";
+}
+if (time < 5)
+{
+document.getElementById("title").innerHTML="Go to sleep!";
+}
+</script>
+</head>
+<style></style>
+
+<body>
+<p>
+  	<script language="javascript">
+		now = new Date();
+		bg = now.getSeconds();
+		bg = bg - parseInt(bg/35)*35 + 1;
+	</script>
+  
+  	<script language="javascript">
+		now = new Date();
+		logo = now.getSeconds();
+		logo = logo - parseInt(logo/37)*37 + 1;
+	</script>
+  
+  	<script language="javascript">
+		document.write("<body background='wap/bg"+bg+".png'>")
+	</script>
+  
+  <div id="content">
+</p>
+<p>  <br />
+</p>
+
+<div class="search_part">
+
+  <a class="logo" href="history://">
+  <script language="javascript">
+	document.write("<img class='smaller' src='logo/logo"+logo+".png'></img>")
+	</script>
+</a>
+<br />
+<form onsubmit="return search()" class="search_bar">
+	<input type="submit" id="search_submit" value="🔄" >
+		<span><i id="clear" onclick="clear_seach()"></i>
+			<div class="si">
+				<input class="search" type="text" value="" onkeyup="get_suggest()" onfocus="get_suggest()" onpaste="get_suggest()" autocomplete="off" id="search_input" placeholder="(๑•̀ㅂ•́)و✧" >
+			</div>
+		</span>
+	<div id="suggest" style="display:none">
+		<ul id="suglist"></ul>
+			<div class="close" onclick="close_sug()">⬆收起⬆</div>
+	</div>
+</form>
+</div>
+<br />
+
+<div class="box">
+	<a href="https://www.google.com"></a>
+	<p><img class="icon" src="img/gapps.png" ></p>
+	<p class="url"></p>
+</div>
+
+<div class="box">
+	<a href="http://www.coolapk.com"></a>
+	<p><img class="icon" src="img/coolapk.png" ></p>
+	<p class="url"></p>
+</div>
+
+<div class="box">
+	<a href="https://www.xda-developers.com"></a>
+	<p><img class="icon" src="img/xda_labs.png" ></p>
+	<p class="url"></p>
+</div>
+
+<div class="box">
+	<a href="https://www.apkmirror.com"></a>
+	<p><img class="icon" src="img/google_play_store.png" ></p>
+	<p class="url"></p>
+</div>
+
+<div class="box">
+	<a href="https://www.facebook.com"></a>
+	<p><img class="icon" src="img/facebook.png" ></p>
+	<p class="url"></p>
+</div>
+
+<div class="box">
+	<a href="https://twitter.com"></a>
+	<p><img class="icon" src="img/twitter.png" ></p>
+	<p class="url"></p>
+</div>
+
+<div class="box">
+	<a href="https://www.youtube.com"></a>
+	<p><img class="icon" src="img/google_youtube.png" ></p>
+	<p class="url"></p>
+</div>
+
+<div class="box">
+	<a href="https://mail.google.com/mail/#inbox"></a>
+	<p><img class="icon" src="img/google_gmail.png" ></p>
+	<p class="url"></p>
+</div>
+
+<div class="box">
+<a href="https://translate.google.cn"></a>
+<p><img class="icon" src="img/google_translate.png" ></p>
+<p class="url"></p>
+</div>
+
+<div class="box">
+<a href="http://w.qq.com"></a>
+<p><img class="icon" src="img/tencent_qq.png" ></p>
+<p class="url"></p>
+</div>
+
+<div class="box">
+<a href="chrome://flags/#enable-chrome-home"></a>
+<p><img class="icon" src="img/辅助.png" ></p>
+<p class="url"></p>
+</div>
+
+<div class="title">
+<!-- <p style="">情不敢至深　恐大梦一场　卦不敢算尽　畏天道无常</p> -->
+
+<img src="https://api.gushi.ci/all.svg" style="max-width:100%; ">
+<div class="label">
+<!-- <span id="jinrishici-sentence">正在加载今日诗词....</span>
+<script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+<script type="text/javascript">
+  jinrishici.load(function(result) {
+    // 自己的处理逻辑
+    console.log(result)
+  });
+</script> -->
+<script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+
+<div id="poem_sentence"></div>
+	<div id="poem_info"></div>
+	<script type="text/javascript">
+	  jinrishici.load(function(result) {
+	    var sentence = document.querySelector("#poem_sentence")
+	    var info = document.querySelector("#poem_info")
+	    sentence.innerHTML = result.data.content
+	    info.innerHTML = '【' + result.data.origin.dynasty + '】' + result.data.origin.author + '《' + result.data.origin.title + '》'
+	  });
+	</script>
+</div>
+</div>
+
+<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>
