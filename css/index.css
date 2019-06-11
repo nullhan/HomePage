@@ -473,3 +473,19 @@ font-size: 0.75em;
 		transform: translateY(0)
 	}
 }
+/*设置今日诗词字体样式*/
+.poem_sentence{
+	margin: 1px 1px 1px 1px ;
+	padding: 1px 1px 1px 1px;
+	font-family: "楷体";
+	font-size: 1.5em;
+	font-weight: 900;
+	font-color:#e62117;
+
+}
+.poem_info{
+	margin: 8px 1px 1px 1px ;
+	padding: 1px 1px 1px 1px;
+	font-color:#F00;
+	font-size: 1em;
+}
