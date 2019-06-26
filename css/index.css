@@ -116,7 +116,7 @@ display: none;
 float: right;
 width: 30px;
 height: 45px;
-background: url(img/remove.png) no-repeat center;
+background: url(../img/remove.png) no-repeat center;
 background-size: 15px;
 }
 

@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta content="en-us" http-equiv="Content-Language" />
@@ -6,7 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title id="title"></title>
 <link rel="stylesheet" href="css/index.css">
+
 <script type="text/javascript"	src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+<script type="text/javascript" src="js/index.js"></script>
 <script type="text/javascript">
 	window.onload=function(){
 var d = new Date()
@@ -27,46 +28,90 @@ if (time < 5)
 {
 document.getElementById("title").innerHTML="Go to sleep!";
 }
-var arr = new Array();
-  			arr[0]="https://s2.ax1x.com/2019/06/11/Vcknc4.png";
-  			arr[1]="https://s2.ax1x.com/2019/06/11/VcklH1.png";
-  			arr[2]="https://s2.ax1x.com/2019/06/11/Vck8N6.png";
-  			arr[3]="https://s2.ax1x.com/2019/06/11/VckY9O.png";
-  			arr[4]="https://s2.ax1x.com/2019/06/11/VckMu9.png";
-  			arr[5]="https://s2.ax1x.com/2019/06/11/VckQBR.png";
-  			arr[6]="https://s2.ax1x.com/2019/06/11/Vck3Ax.png";
-  			arr[7]="https://s2.ax1x.com/2019/06/11/Vckdud.png";
-  			arr[8]="https://s2.ax1x.com/2019/06/11/VckG4K.png";
-  			arr[9]="https://s2.ax1x.com/2019/06/11/VckNge.png";
-  			arr[10]="https://s2.ax1x.com/2019/06/11/VckUjH.png";
-  			arr[11]="https://s2.ax1x.com/2019/06/11/Vckt3D.png";
-  			arr[12]="https://s2.ax1x.com/2019/06/11/Vcks4f.png";
-  			arr[13]="https://s2.ax1x.com/2019/06/11/Vck6C8.png";
-  			arr[14]="https://s2.ax1x.com/2019/06/11/VckwDA.png";
-  			arr[15]="https://s2.ax1x.com/2019/06/11/VckDEt.png";
-  			arr[16]="https://s2.ax1x.com/2019/06/11/Vck0HI.png";
-  			arr[17]="https://s2.ax1x.com/2019/06/11/VckWuj.png";
-  			arr[18]="https://s2.ax1x.com/2019/06/11/VckOKJ.png";
-  			arr[19]="https://s2.ax1x.com/2019/06/11/Vckhbn.png";
-  			arr[20]="https://s2.ax1x.com/2019/06/11/Vckc8S.png";
-  			arr[21]="https://s2.ax1x.com/2019/06/11/Vckggg.png";
-  			arr[22]="https://s2.ax1x.com/2019/06/11/Vck2vQ.png";
-  			arr[23]="https://s2.ax1x.com/2019/06/11/VckIU0.png";
-  			arr[24]="https://s2.ax1x.com/2019/06/11/VckujJ.png";
-  			arr[25]="https://s2.ax1x.com/2019/06/11/Vcko5V.png";
-  			arr[26]="https://s2.ax1x.com/2019/06/11/Vck5Eq.png";
-  			arr[27]="https://s2.ax1x.com/2019/06/11/Vckqv4.png";
-  			arr[28]="https://s2.ax1x.com/2019/06/11/VckH8U.png";
-  			arr[29]="https://s2.ax1x.com/2019/06/11/VckxV1.png";
-  			arr[30]="https://s2.ax1x.com/2019/06/11/Vckb2F.png";
-  			arr[31]="https://s2.ax1x.com/2019/06/11/VckXr9.png";
+			var arr = new Array();
+  			arr[0]="https://s2.ax1x.com/2019/06/11/VckxV1.png";
+			arr[1]="https://s2.ax1x.com/2019/06/11/VckOKJ.png";
+			arr[2]="https://s2.ax1x.com/2019/06/11/Vckqv4.png";
+			arr[3]="https://s2.ax1x.com/2019/06/11/VckH8U.png";
+			arr[4]="https://s2.ax1x.com/2019/06/11/Vcko5V.png";
+			arr[5]="https://s2.ax1x.com/2019/06/11/VckIU0.png";
+			arr[6]="https://s2.ax1x.com/2019/06/11/Vck5Eq.png";
+			arr[7]="https://s2.ax1x.com/2019/06/11/Vckhbn.png";
+			arr[8]="https://s2.ax1x.com/2019/06/11/VckWuj.png";
+			arr[9]="https://s2.ax1x.com/2019/06/11/Vck2vQ.png";
+			arr[10]="https://s2.ax1x.com/2019/06/11/Vckggg.png";
+			arr[11]="https://s2.ax1x.com/2019/06/11/Vckc8S.png";
+			arr[12]="https://s2.ax1x.com/2019/06/11/Vck6C8.png";
+			arr[13]="https://s2.ax1x.com/2019/06/11/Vcks4f.png";
+			arr[14]="https://s2.ax1x.com/2019/06/11/VckDEt.png";
+			arr[15]="https://s2.ax1x.com/2019/06/11/Vck0HI.png";
+			arr[16]="https://s2.ax1x.com/2019/06/11/VckwDA.png";
+			arr[17]="https://s2.ax1x.com/2019/06/11/Vckdud.png";
+			arr[18]="https://s2.ax1x.com/2019/06/11/VckUjH.png";
+			arr[19]="https://s2.ax1x.com/2019/06/11/VckNge.png";
+			arr[20]="https://s2.ax1x.com/2019/06/11/Vckt3D.png";
+			arr[21]="https://s2.ax1x.com/2019/06/11/VckY9O.png";
+			arr[22]="https://s2.ax1x.com/2019/06/11/VckG4K.png";
+			arr[23]="https://s2.ax1x.com/2019/06/11/Vck8N6.png";
+			arr[24]="https://s2.ax1x.com/2019/06/11/Vck3Ax.png";
+			arr[25]="https://s2.ax1x.com/2019/06/11/VcklH1.png";
+			arr[26]="https://s2.ax1x.com/2019/06/11/VckQBR.png";
+			arr[27]="https://s2.ax1x.com/2019/06/11/VckMu9.png";
+			arr[28]="https://s2.ax1x.com/2019/06/11/VckujJ.png";
+			arr[29]="https://s2.ax1x.com/2019/06/11/Vcknc4.png";
 
-  				var	now = new Date();
-				var bg = now.getSeconds();
-				var	bg = bg - parseInt(bg/35)*35 + 1;
 
-				var tp=document.getElementById('yi');
-				tp.background=arr[bg];
+
+	var	now = new Date();
+	var bg = now.getSeconds();
+	var	bg = bg - parseInt(bg/35)*35 + 1;
+	var tp=document.getElementById('yi');
+	tp.background=arr[bg];
+
+			var arr1 = new Array();
+			arr1[0]="https://s2.ax1x.com/2019/06/11/Vc8wrt.png";
+			arr1[1]="https://s2.ax1x.com/2019/06/11/Vc8dKI.png";
+			arr1[2]="https://s2.ax1x.com/2019/06/11/Vc8UxA.png";
+			arr1[3]="https://s2.ax1x.com/2019/06/11/Vc8N2d.png";
+			arr1[4]="https://s2.ax1x.com/2019/06/11/Vc8t8H.png";
+			arr1[5]="https://s2.ax1x.com/2019/06/11/Vc8YPe.png";
+			arr1[6]="https://s2.ax1x.com/2019/06/11/Vc8G5D.png";
+			arr1[7]="https://s2.ax1x.com/2019/06/11/Vc88UO.png";
+			arr1[8]="https://s2.ax1x.com/2019/06/11/Vc83VK.png";
+			arr1[9]="https://s2.ax1x.com/2019/06/11/Vc8lb6.png";
+			arr1[10]="https://s2.ax1x.com/2019/06/11/Vc8QDx.png";
+			arr1[11]="https://s2.ax1x.com/2019/06/11/Vc8MK1.png";
+			arr1[12]="https://s2.ax1x.com/2019/06/11/Vc8uvR.png";
+			arr1[13]="https://s2.ax1x.com/2019/06/11/Vc8n29.png";
+			arr1[14]="https://s2.ax1x.com/2019/06/11/Vc8m8J.png";
+			arr1[15]="https://s2.ax1x.com/2019/06/11/Vc8eC4.png";
+			arr1[16]="https://s2.ax1x.com/2019/06/11/Vc8V5F.png";
+			arr1[17]="https://s2.ax1x.com/2019/06/11/Vc8EUU.png";
+			arr1[18]="https://s2.ax1x.com/2019/06/11/Vc8AET.png";
+			arr1[19]="https://s2.ax1x.com/2019/06/11/Vc8FbV.png";
+			arr1[20]="https://s2.ax1x.com/2019/06/11/Vc8iD0.png";
+			arr1[21]="https://s2.ax1x.com/2019/06/11/Vc8Puq.png";
+			arr1[22]="https://s2.ax1x.com/2019/06/11/Vc89vn.png";
+			arr1[23]="https://s2.ax1x.com/2019/06/11/Vc8pgs.png";
+			arr1[24]="https://s2.ax1x.com/2019/06/11/Vc8S3j.png";
+			arr1[25]="https://s2.ax1x.com/2019/06/11/Vc3zCQ.png";
+			arr1[26]="https://s2.ax1x.com/2019/06/11/Vc3v4g.png";
+			arr1[27]="https://s2.ax1x.com/2019/06/11/Vc3jUS.png";
+			arr1[28]="https://s2.ax1x.com/2019/06/11/Vc3XE8.png";
+			arr1[29]="https://s2.ax1x.com/2019/06/11/Vc3LHf.png";
+			arr1[30]="https://s2.ax1x.com/2019/06/11/Vc3qDP.png";
+			arr1[31]="https://s2.ax1x.com/2019/06/11/Vc3but.png";
+			arr1[32]="https://s2.ax1x.com/2019/06/11/Vc37jI.png";
+			arr1[33]="https://s2.ax1x.com/2019/06/11/Vc3TgA.png";
+			arr1[34]="https://s2.ax1x.com/2019/06/11/Vc3o3d.png";
+			arr1[35]="https://s2.ax1x.com/2019/06/11/Vc3I9H.png";
+			arr1[36]="https://s2.ax1x.com/2019/06/11/Vc344e.png";
+		
+		var	now = new Date();
+		var	logo = now.getSeconds();
+		var	logo = logo - parseInt(logo/37)*37 + 1;
+		var logoimg=document.getElementById('logoyi');
+			logoimg.src=arr1[logo];
 }
 </script>
 </head>
@@ -74,35 +119,16 @@ var arr = new Array();
 <style></style>
 
 <body background="#" id="yi">
-
-  	<script type="text/javascript">
-		
-	</script>
-  
-  	<script type="text/javascript">
-		var	now = new Date();
-		var	logo = now.getSeconds();
-		var	logo = logo - parseInt(logo/37)*37 + 1;
-	</script>
-  
-  	<script type="text/javascript">
-  		window.onload=funciton(){
-  			
-  			}
-		
-	</script>
-	
   
   <div id="content">
 
 <p><br/></p></div>
 
 <div class="search_part">
-  <a class="logo" href="history://">
-  <script type="text/javascript">
-	document.write("<img class='smaller' src='logo/logo"+logo+".png'></img>")
-	</script>
-</a>
+  <a class="logo" href="history//">
+  <img class='smaller' id='logoyi' src='#'></img>
+  </a>
+
 <br/>
 
 <form onsubmit="return search()" class="search_bar">
@@ -112,6 +138,7 @@ var arr = new Array();
 				<input class="search" type="text" value="" onkeyup="get_suggest()" onfocus="get_suggest()" onpaste="get_suggest()" autocomplete="off" id="search_input" placeholder="(๑•̀ㅂ•́)و✧" >
 			</div>
 		</span>
+
 	<div id="suggest" style="display:none">
 		<ul id="suglist"></ul>
 			<div class="close" onclick="close_sug()">⬆收起⬆</div>
@@ -239,6 +266,5 @@ var arr = new Array();
 </div>
 </div>
 
-<script type="text/javascript" src="js/index.js"></script>
 </body>
 </html>
